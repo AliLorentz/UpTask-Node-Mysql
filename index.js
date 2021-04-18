@@ -10,6 +10,7 @@ const helpers = require('./helper.js');
 const db=require('./config/db.js');
 //importar el modelo
 require('./models/Proyectos.js');
+require('./models/Tareas.js');
 
 db.sync()
 	.then(()=>console.log('Conectado al servidor'))
